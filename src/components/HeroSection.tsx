@@ -21,18 +21,18 @@ export default function HeroSection() {
               Experimente Grátis por 30 Dias
             </a>
             <a
-              href="#demo"
+              href="#teste"
               className="bg-accent hover:bg-accent/80 text-accent-foreground px-6 py-3 rounded-md font-medium text-center transition-colors"
             >
-              Assistir Demonstração
+              Teste no Site
             </a>
           </div>
         </div>
         
         <div className="relative h-full min-h-[400px] lg:min-h-[600px] rounded-2xl overflow-hidden shadow-xl">
           <img
-            src="/lovable-uploads/dd001945-149e-41a1-9a62-9a5e2e1db74a.png"
-            alt="Iza da Trilha - Assistente IA para ecoturismo"
+            src="/lovable-uploads/441789db-10e4-407e-ba39-9cee4b021984.png"
+            alt="Iza da Trilha - Guia de Ecoturismo"
             className="w-full h-full object-cover object-center"
           />
         </div>

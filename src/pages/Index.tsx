@@ -1,5 +1,4 @@
 
-import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import FunctionalitiesSection from "@/components/FunctionalitiesSection";
@@ -20,7 +19,6 @@ export default function Index() {
         <FAQSection />
       </main>
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 }
