@@ -1,6 +1,4 @@
 
-import { Link } from "react-router-dom";
-
 export default function Header() {
   return (
     <header className="w-full py-4 px-6 md:px-12 bg-background flex items-center justify-between">
@@ -12,18 +10,18 @@ export default function Header() {
       </div>
       
       <nav className="hidden md:flex items-center space-x-8">
-        <Link to="#funcionalidades" className="text-foreground hover:text-primary transition-colors">
+        <a href="#funcionalidades" className="text-foreground hover:text-primary transition-colors">
           Funcionalidades
-        </Link>
-        <Link to="#vantagens" className="text-foreground hover:text-primary transition-colors">
+        </a>
+        <a href="#vantagens" className="text-foreground hover:text-primary transition-colors">
           Vantagens
-        </Link>
-        <Link to="#planos" className="text-foreground hover:text-primary transition-colors">
+        </a>
+        <a href="#planos" className="text-foreground hover:text-primary transition-colors">
           Planos
-        </Link>
-        <Link to="#faq" className="text-foreground hover:text-primary transition-colors">
+        </a>
+        <a href="#faq" className="text-foreground hover:text-primary transition-colors">
           FAQ
-        </Link>
+        </a>
       </nav>
     </header>
   );

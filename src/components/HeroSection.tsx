@@ -1,6 +1,4 @@
 
-import { Link } from "react-router-dom";
-
 export default function HeroSection() {
   return (
     <section className="w-full py-12 md:py-20 bg-secondary/30">
@@ -16,18 +14,18 @@ export default function HeroSection() {
             Atenda clientes no WhatsApp e site, automatize reservas, tire dúvidas e processe pagamentos—tudo com inteligência artificial
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-            <Link
-              to="#planos"
+            <a
+              href="#planos"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-md font-medium text-center transition-colors"
             >
               Experimente Grátis por 30 Dias
-            </Link>
-            <Link
-              to="#demo"
+            </a>
+            <a
+              href="#demo"
               className="bg-accent hover:bg-accent/80 text-accent-foreground px-6 py-3 rounded-md font-medium text-center transition-colors"
             >
               Assistir Demonstração
-            </Link>
+            </a>
           </div>
         </div>
         

@@ -1,6 +1,5 @@
 
 import { Check } from "lucide-react";
-import { Link } from "react-router-dom";
 
 export default function PricingSection() {
   const features = [
@@ -50,12 +49,12 @@ export default function PricingSection() {
                 Cancele quando quiser - sem multas ou taxas escondidas
               </div>
 
-              <Link 
-                to="#signup" 
+              <a 
+                href="#signup" 
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3 px-6 rounded-md font-medium text-center block mt-6 transition-colors"
               >
                 Comece Agora sem Risco
-              </Link>
+              </a>
             </div>
           </div>
         </div>
