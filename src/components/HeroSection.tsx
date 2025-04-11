@@ -17,23 +17,39 @@ export default function HeroSection() {
             <a
               href="#planos"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-md font-medium text-center transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Experimente Grátis por 30 Dias
             </a>
             <a
               href="#teste"
               className="bg-accent hover:bg-accent/80 text-accent-foreground px-6 py-3 rounded-md font-medium text-center transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('teste')?.scrollIntoView({ behavior: 'smooth' });
+                
+                // Optional: Also trigger the chat widget after a short delay
+                setTimeout(() => {
+                  const widgetButton = document.querySelector('.zaia-widget-button');
+                  if (widgetButton && widgetButton instanceof HTMLElement) {
+                    widgetButton.click();
+                  }
+                }, 1000);
+              }}
             >
               Teste no Site
             </a>
           </div>
         </div>
         
-        <div className="relative h-full min-h-[400px] lg:min-h-[600px] rounded-2xl overflow-hidden shadow-xl">
+        <div className="relative max-w-md mx-auto lg:mx-0 h-auto rounded-2xl overflow-hidden shadow-xl">
           <img
             src="/lovable-uploads/441789db-10e4-407e-ba39-9cee4b021984.png"
             alt="Iza da Trilha - Guia de Ecoturismo"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-auto object-contain"
           />
         </div>
       </div>

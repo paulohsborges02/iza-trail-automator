@@ -50,8 +50,20 @@ export default function PricingSection() {
               </div>
 
               <a 
-                href="#signup" 
+                href="#teste" 
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3 px-6 rounded-md font-medium text-center block mt-6 transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('teste')?.scrollIntoView({ behavior: 'smooth' });
+                  
+                  // Also trigger the chat widget after a short delay
+                  setTimeout(() => {
+                    const widgetButton = document.querySelector('.zaia-widget-button');
+                    if (widgetButton && widgetButton instanceof HTMLElement) {
+                      widgetButton.click();
+                    }
+                  }, 1000);
+                }}
               >
                 Comece Agora sem Risco
               </a>

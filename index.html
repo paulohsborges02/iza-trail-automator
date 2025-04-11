@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Iza da Trilha - Assistente de IA para Agências de Ecoturismo</title>
     <meta name="description" content="Reduza custos, ganhe tempo e aumente vendas com Iza da Trilha - sua assistente de IA 24/7 para agências de ecoturismo e trilhas." />
     <meta name="author" content="Iza da Trilha" />
@@ -23,5 +24,19 @@
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="./src/main.tsx"></script>
+    
+    <!-- Widget Env Script -->
+    <script>
+      window.ZWidget = {
+        AgentURL: "https://platform.zaia.app/embed/chat/44376",
+      };
+      
+      // Optional: Set custom data for the user
+      window.ZWidget.setCustomData = function(customData) {
+        window.ZWidget.CustomData = customData;
+      };
+    </script>
+    <!-- Widget Loader Script -->
+    <script src="https://platform.zaia.app/script/widget-loader.js"></script>
   </body>
 </html>
